@@ -1,13 +1,13 @@
 # PersistentHotspot
 Following a recent update in Windows 10, the Wifi Hotspot feature automatically turns off after a while if there are no connecting clients, there is no way to make it permanently ON anymore using windows configurations. As i wanted my hotspot to be permanently ON, here is PersistentHotspot! 
 
-PersistentHotspot uses the WindowsRuntime reference to access the Windows Runtime API that exposes the required interfaces such as NetworkOperatorTetheringManager.
-Unfortunately, The only way to add a reference to Windows Runtime is to edit your .csproj manually and add the following references, why Microsoft why ?
-
 This project was built using VS2019 Community Edition and the Windows Kits Library was installed as it is a dependency.
 
 The installer can be downloaded from here:
 https://github.com/ashvin-bhuttoo/PersistentHotspot/blob/master/PersistentHotspotSetup/Release/PersistentHotspotSetup.msi
+
+PersistentHotspot uses the WindowsRuntime reference to access the Windows Runtime API that exposes the required interfaces such as NetworkOperatorTetheringManager.
+Unfortunately, The only way to add a reference to Windows Runtime is to edit your .csproj manually and add the following references, why Microsoft why ?
 
 ```xml
 <ItemGroup>
