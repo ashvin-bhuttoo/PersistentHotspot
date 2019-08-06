@@ -1,0 +1,11 @@
+C:\Users\DJ_AA\source\repos\PersistentHotspot\PersistentHotspot\bin\Release\PersistentHotspot.exe.config
+C:\Users\DJ_AA\source\repos\PersistentHotspot\PersistentHotspot\bin\Release\PersistentHotspot.exe
+C:\Users\DJ_AA\source\repos\PersistentHotspot\PersistentHotspot\bin\Release\PersistentHotspot.pdb
+C:\Users\DJ_AA\source\repos\PersistentHotspot\PersistentHotspot\bin\Release\System.Runtime.WindowsRuntime.dll
+C:\Users\DJ_AA\source\repos\PersistentHotspot\PersistentHotspot\bin\Release\Windows.winmd
+C:\Users\DJ_AA\source\repos\PersistentHotspot\PersistentHotspot\bin\Release\System.Runtime.WindowsRuntime.xml
+C:\Users\DJ_AA\source\repos\PersistentHotspot\PersistentHotspot\obj\Release\PersistentHotspot.csproj.CoreCompileInputs.cache
+C:\Users\DJ_AA\source\repos\PersistentHotspot\PersistentHotspot\obj\Release\PersistentHotspot.csproj.CopyComplete
+C:\Users\DJ_AA\source\repos\PersistentHotspot\PersistentHotspot\obj\Release\PersistentHotspot.exe
+C:\Users\DJ_AA\source\repos\PersistentHotspot\PersistentHotspot\obj\Release\PersistentHotspot.pdb
+C:\Users\DJ_AA\source\repos\PersistentHotspot\PersistentHotspot\obj\Release\PersistentHotspot.csprojAssemblyReference.cache
