@@ -6,6 +6,9 @@ Unfortunately, The only way to add a reference to Windows Runtime is to edit you
 
 This project was built using VS2019 Community Edition and the Windows Kits Library was installed as it is a dependency.
 
+The installer can be downloaded from here:
+https://github.com/ashvin-bhuttoo/PersistentHotspot/blob/master/PersistentHotspotSetup/Release/PersistentHotspotSetup.msi
+
 ```xml
 <ItemGroup>
    ....
