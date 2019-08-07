@@ -93,5 +93,10 @@
     <EmbeddedResource Include="resources\green.png" />
     <EmbeddedResource Include="resources\red.png" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="resources\amber.ico" />
+    <EmbeddedResource Include="resources\green.ico" />
+    <EmbeddedResource Include="resources\red.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

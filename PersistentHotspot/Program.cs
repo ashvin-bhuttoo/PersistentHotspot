@@ -14,15 +14,16 @@ namespace PersistentHotspot
         
         static async Task Main(string[] args)
         {
-            Icon red = new Icon(Assembly.GetExecutingAssembly().GetManifestResourceStream($"PersistentHotspot.resources.red.png"));
-            Icon amber = new Icon(Assembly.GetExecutingAssembly().GetManifestResourceStream($"PersistentHotspot.resources.amber.png"));
-            Icon green = new Icon(Assembly.GetExecutingAssembly().GetManifestResourceStream($"PersistentHotspot.resources.green.png"));
+            Icon red = new Icon(Assembly.GetExecutingAssembly().GetManifestResourceStream($"PersistentHotspot.resources.red.ico"));
+            Icon amber = new Icon(Assembly.GetExecutingAssembly().GetManifestResourceStream($"PersistentHotspot.resources.amber.ico"));
+            Icon green = new Icon(Assembly.GetExecutingAssembly().GetManifestResourceStream($"PersistentHotspot.resources.green.ico"));
 
             NotifyIcon trayIcon = new NotifyIcon();
-            trayIcon.Text = "TestApp";
+            trayIcon.Text = "PersistentHotspot loading..";
             trayIcon.Icon = amber;
+            trayIcon.Visible = true;
 
-            Application.Run();
+            //Application.Run();
 
             while (true)
             {
@@ -30,32 +31,39 @@ namespace PersistentHotspot
                 var tetheringManager = Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager.CreateFromConnectionProfile(connectionProfile);
                 if (tetheringManager.TetheringOperationalState == Windows.Networking.NetworkOperators.TetheringOperationalState.On)
                 {
-                    Console.WriteLine("Hotspot is on.");
+                    //Console.WriteLine("Hotspot is on.");
+                    trayIcon.Text = "Hotspot is on.";
                     trayIcon.Icon = green;
                 }
                 else
                 {
-                    Console.Write("Hotspot is off, turning that shit on.. ");
+                    //Console.Write("Hotspot is off, turning that shit on.. ");
+                    trayIcon.Text = "Turning on Hotspot...";
+                    trayIcon.Icon = amber;
                     var result = (Windows.Networking.NetworkOperators.NetworkOperatorTetheringOperationResult) await tetheringManager.StartTetheringAsync();
                     switch(result.Status)
                     {
                         case Windows.Networking.NetworkOperators.TetheringOperationStatus.OperationInProgress:
-                            Console.WriteLine("Operation In Progress..");
+                            //Console.WriteLine("Operation In Progress..");
+                            trayIcon.Text = "Turning on Hotspot...";
                             trayIcon.Icon = amber;
                             break;
                         case Windows.Networking.NetworkOperators.TetheringOperationStatus.Success:
-                            Console.WriteLine("Success!");
+                            //Console.WriteLine("Success!");
+                            trayIcon.Text = "Hotspot is on.";
                             trayIcon.Icon = green;
                             break;
 
                         case Windows.Networking.NetworkOperators.TetheringOperationStatus.WiFiDeviceOff:
-                            Console.WriteLine("Failure, WiFi Device Off!");
+                            //Console.WriteLine("Failure, WiFi Device Off!");
+                            trayIcon.Text = "Failure, WiFi Device Off!";
                             trayIcon.Icon = red;
                             break;
 
                         default:
                         case Windows.Networking.NetworkOperators.TetheringOperationStatus.Unknown:
-                            Console.WriteLine("Unknown Failure!");
+                            //Console.WriteLine("Unknown Failure!");
+                            trayIcon.Text = "Unknown Failure!";
                             trayIcon.Icon = red;
                             break;
                     }
