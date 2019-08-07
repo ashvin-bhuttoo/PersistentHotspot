@@ -239,6 +239,20 @@
     {
         "CustomAction"
         {
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_3BCB886D11E843FD9E86805E87F577B5"
+            {
+            "Name" = "8:PersistentHotspot.exe"
+            "Condition" = "8:"
+            "Object" = "8:_B6F2E28B77DE43EF9D5DE3D5E9115861"
+            "FileType" = "3:2"
+            "InstallAction" = "3:2"
+            "Arguments" = "8:INSTALLER"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_FF0B7E3C_93FA_4ED9_82EF_EAC7567FFB75"
+            "InstallerClass" = "11:FALSE"
+            "CustomActionData" = "8:"
+            }
         }
         "DefaultFeature"
         {
@@ -731,12 +745,12 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:PersistentHotspot"
         "ProductCode" = "8:{53EBD4B8-C828-480E-92CA-ACF0F3CF02D3}"
-        "PackageCode" = "8:{71797C40-DDC4-4867-A32D-4186D5184A5A}"
+        "PackageCode" = "8:{32FCD743-66F2-47FF-82AF-9360D4B244A7}"
         "UpgradeCode" = "8:{C5C01E9B-F9BE-4F3D-A27F-B01B0177AA16}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
-        "DetectNewerInstalledVersion" = "11:TRUE"
+        "DetectNewerInstalledVersion" = "11:FALSE"
         "InstallAllUsers" = "11:TRUE"
         "ProductVersion" = "8:1.0.0"
         "Manufacturer" = "8:Unkn0wn"
