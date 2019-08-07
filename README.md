@@ -7,7 +7,7 @@ The installer can be downloaded from here:
 https://github.com/ashvin-bhuttoo/PersistentHotspot/blob/master/PersistentHotspotSetup/Release/PersistentHotspotSetup.msi
 
 PersistentHotspot uses the WindowsRuntime reference to access the Windows Runtime API that exposes the required interfaces such as NetworkOperatorTetheringManager.
-Unfortunately, The only way to add a reference to Windows Runtime is to edit your .csproj manually and add the following references, why Microsoft why ?
+Strangely, The only way to add a reference to Windows Runtime is to edit your .csproj manually and add the following references, why Microsoft why ?
 
 ```xml
 <ItemGroup>
