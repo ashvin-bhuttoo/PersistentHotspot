@@ -8,3 +8,4 @@ C:\Users\DJ_AA\source\repos\PersistentHotspot\PersistentHotspot\obj\Release\Pers
 C:\Users\DJ_AA\source\repos\PersistentHotspot\PersistentHotspot\obj\Release\PersistentHotspot.csproj.CopyComplete
 C:\Users\DJ_AA\source\repos\PersistentHotspot\PersistentHotspot\obj\Release\PersistentHotspot.exe
 C:\Users\DJ_AA\source\repos\PersistentHotspot\PersistentHotspot\obj\Release\PersistentHotspot.pdb
+C:\Users\DJ_AA\source\repos\PersistentHotspot\PersistentHotspot\obj\Release\PersistentHotspot.csprojAssemblyReference.cache

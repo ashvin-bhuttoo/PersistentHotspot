@@ -73,8 +73,8 @@ namespace PersistentHotspot
                         }
                     }
                 }
-                catch (Exception e) {
-                    trayIcon.Text = $"Error: {e.Message}";
+                catch (Exception) {
+                    trayIcon.Text = $"Unknown Failure!";
                     trayIcon.Icon = red;
                 };
                 
