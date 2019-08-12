@@ -4,7 +4,7 @@ Following a recent update in Windows 10, the Wifi Hotspot feature automatically 
 This project was built using VS2019 Community Edition and the Windows Kits Library was installed as it is a dependency.
 
 The installer can be downloaded from here:
-https://github.com/ashvin-bhuttoo/PersistentHotspot/blob/master/PersistentHotspotSetup/Release/PersistentHotspotSetup.msi
+https://raw.githubusercontent.com/ashvin-bhuttoo/PersistentHotspot/master/PersistentHotspotSetup/Release/PersistentHotspotSetup.msi
 
 PersistentHotspot uses the WindowsRuntime reference to access the Windows Runtime API that exposes the required interfaces such as NetworkOperatorTetheringManager.
 Strangely, The only way to add a reference to Windows Runtime is to edit your .csproj manually and add the following references, why Microsoft why ?
