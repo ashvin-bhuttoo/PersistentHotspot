@@ -15,74 +15,68 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_10DC87115A6B4FC59A1F121D6E0FD715"
+        "MsmKey" = "8:_091D559265C94621BA3EB59C83183DB0"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_1942147F41537B04A898054A3161FF14"
-        "OwnerKey" = "8:_10DC87115A6B4FC59A1F121D6E0FD715"
+        "OwnerKey" = "8:_C762B6B341954176A1933EDAE251DAE5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_24E69054A713C0966E6E7B21963283C0"
-        "OwnerKey" = "8:_10DC87115A6B4FC59A1F121D6E0FD715"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_39CFDB4957104CA490717476CFF778C6"
-        "OwnerKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_C762B6B341954176A1933EDAE251DAE5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_4A33A53A9C46E2BD724DCEBADE5BA190"
-        "OwnerKey" = "8:_920E6C2494F340558CA819A538E7FA35"
+        "OwnerKey" = "8:_FC2A713598734B6B8EDDD38635927A87"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_4C93BC98B0CE4D48B4D8C8BD38C0EDEC"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_4D9DF9A3CD3142078D957B61ABFB0F47"
+        "MsmKey" = "8:_5AEF3AF9CF8044079FEA040CE490D779"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_6CD502CE8B2CED24BCB66A77AD945DC8"
-        "OwnerKey" = "8:_920E6C2494F340558CA819A538E7FA35"
+        "OwnerKey" = "8:_FC2A713598734B6B8EDDD38635927A87"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_79D114ED55D365BC73ABEF4C0A422F89"
-        "OwnerKey" = "8:_10DC87115A6B4FC59A1F121D6E0FD715"
+        "OwnerKey" = "8:_C762B6B341954176A1933EDAE251DAE5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_79D114ED55D365BC73ABEF4C0A422F89"
-        "OwnerKey" = "8:_920E6C2494F340558CA819A538E7FA35"
+        "OwnerKey" = "8:_FC2A713598734B6B8EDDD38635927A87"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_920E6C2494F340558CA819A538E7FA35"
+        "MsmKey" = "8:_82C8D8C939714142BF45F13252985126"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8956EDC83C364C138A9AB9D0B8520E34"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_9DB75A96CF11A8881D428B8E9445949F"
-        "OwnerKey" = "8:_10DC87115A6B4FC59A1F121D6E0FD715"
+        "OwnerKey" = "8:_C762B6B341954176A1933EDAE251DAE5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -94,25 +88,37 @@
         "Entry"
         {
         "MsmKey" = "8:_B4690B7571E1C537BEAB2CD0EC1B8FCB"
-        "OwnerKey" = "8:_B6F2E28B77DE43EF9D5DE3D5E9115861"
+        "OwnerKey" = "8:_5AEF3AF9CF8044079FEA040CE490D779"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_B4690B7571E1C537BEAB2CD0EC1B8FCB"
-        "OwnerKey" = "8:_10DC87115A6B4FC59A1F121D6E0FD715"
+        "OwnerKey" = "8:_C762B6B341954176A1933EDAE251DAE5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_B6F2E28B77DE43EF9D5DE3D5E9115861"
+        "MsmKey" = "8:_C762B6B341954176A1933EDAE251DAE5"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_CA2F8677006D040A6B892E8B5865594B"
-        "OwnerKey" = "8:_10DC87115A6B4FC59A1F121D6E0FD715"
+        "OwnerKey" = "8:_C762B6B341954176A1933EDAE251DAE5"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DE3CDECDCF2949BC9B7DAA0F6F17D7AA"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FC2A713598734B6B8EDDD38635927A87"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -124,37 +130,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_B6F2E28B77DE43EF9D5DE3D5E9115861"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6CD502CE8B2CED24BCB66A77AD945DC8"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4A33A53A9C46E2BD724DCEBADE5BA190"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_10DC87115A6B4FC59A1F121D6E0FD715"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_79D114ED55D365BC73ABEF4C0A422F89"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9DB75A96CF11A8881D428B8E9445949F"
+        "OwnerKey" = "8:_C762B6B341954176A1933EDAE251DAE5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -166,13 +142,43 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_1942147F41537B04A898054A3161FF14"
+        "OwnerKey" = "8:_9DB75A96CF11A8881D428B8E9445949F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_79D114ED55D365BC73ABEF4C0A422F89"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_6CD502CE8B2CED24BCB66A77AD945DC8"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_5AEF3AF9CF8044079FEA040CE490D779"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_4A33A53A9C46E2BD724DCEBADE5BA190"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_24E69054A713C0966E6E7B21963283C0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_1942147F41537B04A898054A3161FF14"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -200,6 +206,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
             }
         }
         "Release"
@@ -211,7 +225,7 @@
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
-        "Compression" = "3:2"
+        "Compression" = "3:3"
         "SignOutput" = "11:FALSE"
         "CertificateFile" = "8:"
         "PrivateKeyFile" = "8:"
@@ -239,17 +253,17 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_3BCB886D11E843FD9E86805E87F577B5"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_8D7F185D6EDA4A659C85F31235FAFA38"
             {
             "Name" = "8:PersistentHotspot.exe"
             "Condition" = "8:"
-            "Object" = "8:_B6F2E28B77DE43EF9D5DE3D5E9115861"
+            "Object" = "8:_5AEF3AF9CF8044079FEA040CE490D779"
             "FileType" = "3:2"
             "InstallAction" = "3:2"
             "Arguments" = "8:INSTALLER"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_FF0B7E3C_93FA_4ED9_82EF_EAC7567FFB75"
+            "Identifier" = "8:_8384145C_98C7_4A5D_AFE2_1F7F4265A2E7"
             "InstallerClass" = "11:FALSE"
             "CustomActionData" = "8:"
             }
@@ -276,21 +290,10 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_10DC87115A6B4FC59A1F121D6E0FD715"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_091D559265C94621BA3EB59C83183DB0"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Windows, Version=255.255.255.255, Culture=neutral"
-                "ScatterAssemblies"
-                {
-                    "_10DC87115A6B4FC59A1F121D6E0FD715"
-                    {
-                    "Name" = "8:Windows.winmd"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:..\\PersistentHotspot\\bin\\Release\\Windows.winmd"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\PersistentHotspot\\resources\\icon.ico"
+            "TargetName" = "8:icon.ico"
             "Tag" = "8:"
             "Folder" = "8:_AD215F3179BD4F0194D032FFCC412A1D"
             "Condition" = "8:"
@@ -369,26 +372,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_39CFDB4957104CA490717476CFF778C6"
-            {
-            "SourcePath" = "8:..\\PersistentHotspot\\bin\\Release\\PersistentHotspot.pdb"
-            "TargetName" = "8:PersistentHotspot.pdb"
-            "Tag" = "8:"
-            "Folder" = "8:_AD215F3179BD4F0194D032FFCC412A1D"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4A33A53A9C46E2BD724DCEBADE5BA190"
             {
             "AssemblyRegister" = "3:1"
@@ -420,30 +403,21 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4C93BC98B0CE4D48B4D8C8BD38C0EDEC"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_5AEF3AF9CF8044079FEA040CE490D779"
             {
-            "SourcePath" = "8:..\\PersistentHotspot\\bin\\Release\\PersistentHotspot.exe.config"
-            "TargetName" = "8:PersistentHotspot.exe.config"
-            "Tag" = "8:"
-            "Folder" = "8:_AD215F3179BD4F0194D032FFCC412A1D"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4D9DF9A3CD3142078D957B61ABFB0F47"
-            {
-            "SourcePath" = "8:..\\PersistentHotspot\\bin\\Release\\System.Runtime.WindowsRuntime.xml"
-            "TargetName" = "8:System.Runtime.WindowsRuntime.xml"
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:PersistentHotspot, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_5AEF3AF9CF8044079FEA040CE490D779"
+                    {
+                    "Name" = "8:PersistentHotspot.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\PersistentHotspot\\bin\\Release\\PersistentHotspot.exe"
+            "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_AD215F3179BD4F0194D032FFCC412A1D"
             "Condition" = "8:"
@@ -522,21 +496,30 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_920E6C2494F340558CA819A538E7FA35"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_82C8D8C939714142BF45F13252985126"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Runtime.WindowsRuntime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-                "ScatterAssemblies"
-                {
-                    "_920E6C2494F340558CA819A538E7FA35"
-                    {
-                    "Name" = "8:System.Runtime.WindowsRuntime.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:..\\PersistentHotspot\\bin\\Release\\System.Runtime.WindowsRuntime.dll"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\PersistentHotspot\\bin\\Release\\PersistentHotspot.pdb"
+            "TargetName" = "8:PersistentHotspot.pdb"
+            "Tag" = "8:"
+            "Folder" = "8:_AD215F3179BD4F0194D032FFCC412A1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8956EDC83C364C138A9AB9D0B8520E34"
+            {
+            "SourcePath" = "8:..\\PersistentHotspot\\bin\\Release\\System.Runtime.WindowsRuntime.xml"
+            "TargetName" = "8:System.Runtime.WindowsRuntime.xml"
             "Tag" = "8:"
             "Folder" = "8:_AD215F3179BD4F0194D032FFCC412A1D"
             "Condition" = "8:"
@@ -615,20 +598,20 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B6F2E28B77DE43EF9D5DE3D5E9115861"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C762B6B341954176A1933EDAE251DAE5"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:PersistentHotspot, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:Windows, Version=255.255.255.255, Culture=neutral"
                 "ScatterAssemblies"
                 {
-                    "_B6F2E28B77DE43EF9D5DE3D5E9115861"
+                    "_C762B6B341954176A1933EDAE251DAE5"
                     {
-                    "Name" = "8:PersistentHotspot.exe"
+                    "Name" = "8:Windows.winmd"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:..\\PersistentHotspot\\bin\\Release\\PersistentHotspot.exe"
+            "SourcePath" = "8:..\\PersistentHotspot\\bin\\Release\\Windows.winmd"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_AD215F3179BD4F0194D032FFCC412A1D"
@@ -675,6 +658,57 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DE3CDECDCF2949BC9B7DAA0F6F17D7AA"
+            {
+            "SourcePath" = "8:..\\PersistentHotspot\\bin\\Release\\PersistentHotspot.exe.config"
+            "TargetName" = "8:PersistentHotspot.exe.config"
+            "Tag" = "8:"
+            "Folder" = "8:_AD215F3179BD4F0194D032FFCC412A1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FC2A713598734B6B8EDDD38635927A87"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.Runtime.WindowsRuntime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                "ScatterAssemblies"
+                {
+                    "_FC2A713598734B6B8EDDD38635927A87"
+                    {
+                    "Name" = "8:System.Runtime.WindowsRuntime.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\PersistentHotspot\\bin\\Release\\System.Runtime.WindowsRuntime.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_AD215F3179BD4F0194D032FFCC412A1D"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
         }
@@ -744,15 +778,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:PersistentHotspot"
-        "ProductCode" = "8:{53EBD4B8-C828-480E-92CA-ACF0F3CF02D3}"
-        "PackageCode" = "8:{32FCD743-66F2-47FF-82AF-9360D4B244A7}"
+        "ProductCode" = "8:{D62D1C85-1EC0-4442-9D55-C3F98BA65167}"
+        "PackageCode" = "8:{4461E83A-33F6-4FC8-A66F-778064D08855}"
         "UpgradeCode" = "8:{C5C01E9B-F9BE-4F3D-A27F-B01B0177AA16}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:FALSE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.0.1"
         "Manufacturer" = "8:Unkn0wn"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://github.com/ashvin-bhuttoo/PersistentHotspot"
@@ -865,7 +899,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_81B904C65F9A43A08F238C1058559F84"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_40E72C0B097D49F888B750D420D1F066"
             {
             "Name" = "8:PersistentHotspot.exe"
             "Arguments" = "8:"
@@ -873,10 +907,24 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_B6F2E28B77DE43EF9D5DE3D5E9115861"
+            "Target" = "8:_5AEF3AF9CF8044079FEA040CE490D779"
             "Folder" = "8:_9A8BA8A6FFB44A039DDB26E5386F4948"
             "WorkingFolder" = "8:_AD215F3179BD4F0194D032FFCC412A1D"
             "Icon" = "8:"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_614913B58DD2455EAE270B9EB0B7CD61"
+            {
+            "Name" = "8:PersistentHotspot"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_5AEF3AF9CF8044079FEA040CE490D779"
+            "Folder" = "8:_F2FE14C67963497882EF3C8903F1EA6F"
+            "WorkingFolder" = "8:_AD215F3179BD4F0194D032FFCC412A1D"
+            "Icon" = "8:_091D559265C94621BA3EB59C83183DB0"
             "Feature" = "8:"
             }
         }

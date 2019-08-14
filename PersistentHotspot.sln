@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersistentHotspot", "PersistentHotspot\PersistentHotspot.csproj", "{C73D99A9-029E-4701-934A-C0E0AFEED6AD}"
-EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PersistentHotspotSetup", "PersistentHotspotSetup\PersistentHotspotSetup.vdproj", "{9F31FCE2-8B12-47E5-9120-14463349FECB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersistentHotspot", "PersistentHotspot\PersistentHotspot.csproj", "{C1D5A3D0-79C1-47BF-8FAD-AE8AD5317BA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,12 +13,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C73D99A9-029E-4701-934A-C0E0AFEED6AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C73D99A9-029E-4701-934A-C0E0AFEED6AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C73D99A9-029E-4701-934A-C0E0AFEED6AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C73D99A9-029E-4701-934A-C0E0AFEED6AD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9F31FCE2-8B12-47E5-9120-14463349FECB}.Debug|Any CPU.ActiveCfg = Debug
 		{9F31FCE2-8B12-47E5-9120-14463349FECB}.Release|Any CPU.ActiveCfg = Release
+		{C1D5A3D0-79C1-47BF-8FAD-AE8AD5317BA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D5A3D0-79C1-47BF-8FAD-AE8AD5317BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D5A3D0-79C1-47BF-8FAD-AE8AD5317BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D5A3D0-79C1-47BF-8FAD-AE8AD5317BA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
