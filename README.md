@@ -33,4 +33,5 @@ v1.0.1
 - Added option to toggle the PersistentHotpot ON or OFF
 	+OFF state will keep wifi hotpot off even if turned on manually
 	+ON state will keep wifi hotspot on even if turned off manually
+- Added desktop icon 
 ```
