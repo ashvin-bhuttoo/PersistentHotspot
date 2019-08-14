@@ -27,8 +27,10 @@ Strangely, The only way to add a reference to Windows Runtime is to edit your .c
 ```
 
 <b>Changelog</b>
+```
 v1.0.1
 - Added Exit button in tray icon context menu
 - Added option to toggle the PersistentHotpot ON or OFF
 	+OFF state will keep wifi hotpot off even if turned on manually
 	+ON state will keep wifi hotspot on even if turned off manually
+```
