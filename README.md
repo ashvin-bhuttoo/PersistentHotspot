@@ -3,7 +3,7 @@ Following a recent update in Windows 10, the Wifi Hotspot feature automatically 
 
 This project was built using VS2019 Community Edition and the Windows Kits Library was installed as it is a dependency.
 
-The latest installer can be downloaded from here: <a href="https://raw.githubusercontent.com/ashvin-bhuttoo/PersistentHotspot/master/PersistentHotspotSetup/Release/PersistentHotspotSetup.msi"> v1.0.1</a> <br/>
+The latest installer can be downloaded from here: <a href="https://raw.githubusercontent.com/ashvin-bhuttoo/PersistentHotspot/master/PersistentHotspotSetup/Release/PersistentHotspotSetup.msi"> v1.0.1</a>, uninstall older version before installing latest <br/> 
 Old Versions: <a href="https://raw.githubusercontent.com/ashvin-bhuttoo/PersistentHotspot/master/PersistentHotspotSetup/Archived/PersistentHotspotSetup_v1.0.0.msi"> v1.0.0</a>
 
 PersistentHotspot uses the WindowsRuntime reference to access the Windows Runtime API that exposes the required interfaces such as NetworkOperatorTetheringManager.
