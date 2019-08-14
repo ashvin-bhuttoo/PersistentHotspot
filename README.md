@@ -23,4 +23,6 @@ Strangely, The only way to add a reference to Windows Runtime is to edit your .c
   </ItemGroup>
 ```
 
+If you want to buy me a beer, here's the button.. :)
+
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/ABhuttoo?locale.x=en_US)
