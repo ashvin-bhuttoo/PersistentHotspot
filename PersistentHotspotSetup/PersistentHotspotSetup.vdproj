@@ -407,7 +407,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:PersistentHotspot, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:PersistentHotspot, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_5AEF3AF9CF8044079FEA040CE490D779"
@@ -778,8 +778,8 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:PersistentHotspot"
-        "ProductCode" = "8:{D62D1C85-1EC0-4442-9D55-C3F98BA65167}"
-        "PackageCode" = "8:{4461E83A-33F6-4FC8-A66F-778064D08855}"
+        "ProductCode" = "8:{3DD74A7D-8E5C-4412-AA3E-D04D93341A27}"
+        "PackageCode" = "8:{828124C5-CBE7-4B68-B481-10D3F03D8BC4}"
         "UpgradeCode" = "8:{C5C01E9B-F9BE-4F3D-A27F-B01B0177AA16}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
