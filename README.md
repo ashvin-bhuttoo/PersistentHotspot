@@ -6,8 +6,8 @@ If you want to buy me a beer, here's the button for it.. :)<br/>
 
 This project was built using VS2019 Community Edition and the Windows Kits Library was installed as it is a dependency.
 
-The latest installer can be downloaded from here: <a href="https://raw.githubusercontent.com/ashvin-bhuttoo/PersistentHotspot/master/PersistentHotspotSetup/Release/PersistentHotspotSetup.msi"> v1.0.1</a>, uninstall older version before installing latest <br/> 
-Old Versions: <a href="https://raw.githubusercontent.com/ashvin-bhuttoo/PersistentHotspot/master/PersistentHotspotSetup/Archived/PersistentHotspotSetup_v1.0.0.msi"> v1.0.0</a>
+The latest installer can be downloaded from here: <a href="https://raw.githubusercontent.com/ashvin-bhuttoo/PersistentHotspot/master/PersistentHotspotSetup/Release/PersistentHotspotSetup.msi"> v1.0.2</a>, uninstall older version before installing latest <br/> 
+Old Versions: <a href="https://raw.githubusercontent.com/ashvin-bhuttoo/PersistentHotspot/master/PersistentHotspotSetup/Archived/PersistentHotspotSetup_v1.0.1.msi"> v1.0.1</a> <a href="https://raw.githubusercontent.com/ashvin-bhuttoo/PersistentHotspot/master/PersistentHotspotSetup/Archived/PersistentHotspotSetup_v1.0.0.msi"> v1.0.0</a>
 
 PersistentHotspot uses the WindowsRuntime reference to access the Windows Runtime API that exposes the required interfaces such as NetworkOperatorTetheringManager.
 Strangely, The only way to add a reference to Windows Runtime is to edit your .csproj manually and add the following references, why Microsoft why ?
@@ -28,6 +28,11 @@ Strangely, The only way to add a reference to Windows Runtime is to edit your .c
 
 <b>Changelog</b>
 ```
+v1.0.2
+- Added Option to Auto Restart Hotspot at user defined interval in tray icon context menu
+- PersistentHotspot will now remember the last state and resume that state after reboot
+	i.e. If Hotspot was turned off, after a reboot, the hotspot will persist the Off state
+
 v1.0.1
 - Added Exit button in tray icon context menu
 - Added option to toggle the PersistentHotpot ON or OFF

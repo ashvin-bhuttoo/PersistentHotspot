@@ -53,8 +53,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAutoRestartHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAutoRestartHS.Designer.cs">
+      <DependentUpon>frmAutoRestartHS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAutoRestartHS.resx">
+      <DependentUpon>frmAutoRestartHS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

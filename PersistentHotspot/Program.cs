@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,8 +14,9 @@ namespace PersistentHotspot
 {
     static class Program
     {
-        private static bool stayOnline = true, userToggle = false;
+        private static bool userToggle = false;
         private static NotifyIcon trayIcon = new NotifyIcon();
+        private static Stopwatch timeWatch = new Stopwatch();
         private static System.ComponentModel.IContainer components;
         private static Icon red = new Icon(Assembly.GetExecutingAssembly().GetManifestResourceStream($"PersistentHotspot.resources.red.ico"));
         private static Icon amber = new Icon(Assembly.GetExecutingAssembly().GetManifestResourceStream($"PersistentHotspot.resources.amber.ico"));
@@ -28,8 +30,9 @@ namespace PersistentHotspot
         {
             if (args.Length == 1 && args[0] == "INSTALLER") { Process.Start(Application.ExecutablePath); return; }
 
+            Thread.Sleep(2000);
             Process[] runningProcesses = Process.GetProcessesByName(Process.GetCurrentProcess().ProcessName);
-            if (runningProcesses.Length == 1) // just me, so run!
+            if (runningProcesses.Length == 1 || (args.Length == 1 && args[0] == "OVERRIDE_PROCESS_CHECK")) // if its just me or OVERRIDE is set, let me run!
             {
                 //systray icon config
                 components = new System.ComponentModel.Container();
@@ -43,6 +46,9 @@ namespace PersistentHotspot
                 trayIcon.ContextMenuStrip.Opening += ContextMenuStrip_Opening;
                 trayIcon.MouseUp += trayIcon_MouseUp;
 
+                if (Reg.auto_restart_hotspot > 0)
+                    timeWatch.Restart();
+
                 //Monitor hotspot thread
                 var task = MonitorHotspot();
                 HandleException(task);
@@ -53,25 +59,52 @@ namespace PersistentHotspot
 
         private static async Task MonitorHotspot()
         {
+            int badConnProfileCtr = 0;
             while (true)
             {
                 try
                 {
                     var connectionProfile = Windows.Networking.Connectivity.NetworkInformation.GetInternetConnectionProfile();
+
+                    //Fix issue with GetInternetConnectionProfile() returning null (Windows API issue)
+                    if (connectionProfile == null)
+                    {
+                        if(++badConnProfileCtr > 2) 
+                            break;
+
+                        throw new Exception("BAD_INETCONN_PROFILE");
+                    }
+
                     var tetheringManager = Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager.CreateFromConnectionProfile(connectionProfile);
-                    var tmp_stayOnline = stayOnline;
                     if (tetheringManager.TetheringOperationalState == Windows.Networking.NetworkOperators.TetheringOperationalState.On)
                     {
                         trayIcon.Icon = green;
 
-                        if (tmp_stayOnline)
+                        if (Reg.stay_online)
                         {
-                            trayIcon.Text = "Hotspot is on.";
+                            if(Reg.auto_restart_hotspot > 0)
+                            {
+                                if(timeWatch.ElapsedMilliseconds/60000 >= Reg.auto_restart_hotspot)
+                                {
+                                    trayIcon.Text = "Restarting Hotspot...";
+                                    trayIcon.Icon = amber;
+                                    var result = await tetheringManager.StopTetheringAsync();
+                                    timeWatch.Restart();
+                                }
+                                else
+                                {
+                                    var time_secs = Reg.auto_restart_hotspot*60 - timeWatch.ElapsedMilliseconds / 1000;
+                                    trayIcon.Text = $"Hotspot is on.{(Reg.auto_restart_hotspot > 0 ? $" AutoRestart in {(time_secs > 60 ? $"{time_secs/60} mins {time_secs - ((time_secs/60)*60)} secs" : $"{time_secs} secs")}." : string.Empty)}";
+                                }
+                            }
+                            else
+                            {
+                                trayIcon.Text = "Hotspot is on.";
+                            }
                         }
                         else
                         {
                             trayIcon.Text = "Turning off Hotspot...";
-                            //weird issue with StopTetheringAsync causing GetInternetConnectionProfile to return NULL, need to investigate..
                             var result = (Windows.Networking.NetworkOperators.NetworkOperatorTetheringOperationResult)await tetheringManager.StopTetheringAsync();  
                             switch (result.Status)
                             {
@@ -105,7 +138,7 @@ namespace PersistentHotspot
                     {
                         trayIcon.Icon = amber;
 
-                        if (tmp_stayOnline)
+                        if (Reg.stay_online)
                         {
                             trayIcon.Text = "Turning on Hotspot...";
                             var result = (Windows.Networking.NetworkOperators.NetworkOperatorTetheringOperationResult)await tetheringManager.StartTetheringAsync();
@@ -144,9 +177,8 @@ namespace PersistentHotspot
                 }
                 catch (Exception e)
                 {
-                    trayIcon.Text = $"Unknown Failure!";
-                    //MessageBox.Show(e.Message);
-                    trayIcon.Icon = red;
+                    trayIcon.Text = e.Message == "BAD_INETCONN_PROFILE" ? trayIcon.Text : $"Unknown Failure! Retrying..";
+                    trayIcon.Icon = e.Message == "BAD_INETCONN_PROFILE" ? amber: red;
                 };
 
                 //wait 10s
@@ -159,12 +191,33 @@ namespace PersistentHotspot
 
                 userToggle = false;
             }
+
+            //Fix issue with GetInternetConnectionProfile() returning null (Windows API issue)
+            trayIcon.Visible = false;
+            Process.Start(Application.ExecutablePath, "OVERRIDE_PROCESS_CHECK");
+            Application.Exit();
+            Environment.Exit(Environment.ExitCode);
         }
         
         #region tray icon mode selection
-        private static void switchMode_Click(object sender, EventArgs e)
+        private static void stayOnlineToggle_Click(object sender, EventArgs e)
         {
-            stayOnline = !stayOnline;
+            Reg.stay_online = !Reg.stay_online;
+            userToggle = true;
+        }
+
+        private static void autoRestartToggle_Click(object sender, EventArgs e)
+        {
+            if (Reg.auto_restart_hotspot == 0)
+                new frmAutoRestartHS().ShowDialog();
+            else            
+                Reg.auto_restart_hotspot = 0;
+
+            if (Reg.auto_restart_hotspot == 0)
+                timeWatch.Stop();
+            else
+                timeWatch.Restart();         
+
             userToggle = true;
         }
 
@@ -189,7 +242,10 @@ namespace PersistentHotspot
             e.Cancel = false;
             trayIcon.ContextMenuStrip.Items.Clear();
             trayIcon.ContextMenuStrip.Items.Add(new ToolStripSeparator());
-            trayIcon.ContextMenuStrip.Items.Add(ToolStripMenuItemWithHandler(stayOnline ? "Turn Off" : "Turn On", switchMode_Click));
+            trayIcon.ContextMenuStrip.Items.Add(ToolStripMenuItemWithHandler(Reg.stay_online ? "Turn Off" : "Turn On", stayOnlineToggle_Click));
+            trayIcon.ContextMenuStrip.Items.Add(new ToolStripSeparator());
+            //Implement Feature Request: Cycle on/off status at custom interval #2
+            trayIcon.ContextMenuStrip.Items.Add(ToolStripMenuItemWithHandler(Reg.auto_restart_hotspot > 0 ? "Disable Hotspot Auto Restart" : "Enable Hotspot Auto Restart", autoRestartToggle_Click));
             trayIcon.ContextMenuStrip.Items.Add(new ToolStripSeparator());
             trayIcon.ContextMenuStrip.Items.Add(ToolStripMenuItemWithHandler("Exit", exit_Click));
             trayIcon.ContextMenuStrip.Items.Add(new ToolStripSeparator());
@@ -223,13 +279,56 @@ namespace PersistentHotspot
             }
             catch (Exception e)
             {
-                //Console.WriteLine(e);
-                //Application.ExitThread();
                 trayIcon.Visible = false;
                 Application.Exit();
                 Environment.Exit(Environment.ExitCode);
             }
         }
-        # endregion support methods
+
+        public static class Reg
+        {
+            static Microsoft.Win32.RegistryKey rootKey;
+
+            static Reg()
+            {
+                rootKey = Microsoft.Win32.Registry.CurrentUser.CreateSubKey(@"Software\PersistentHotspot");
+            }
+
+            //Implement Feature Request: Cycle on/off status at custom interval #2
+            public static long auto_restart_hotspot
+            {
+                get
+                {
+                    var defaultValue = 0;
+                    var info = System.Reflection.MethodBase.GetCurrentMethod() as System.Reflection.MethodInfo;
+                    var name = info.Name.Substring(4);
+                    return (dynamic)Convert.ChangeType(rootKey.GetValue(name, defaultValue.ToString()), info.ReturnType);
+                }
+
+                set
+                {
+                    var name = System.Reflection.MethodBase.GetCurrentMethod().Name.Substring(4);
+                    rootKey.SetValue(name, value);
+                }
+            }
+
+            public static bool stay_online
+            {
+                get
+                {
+                    var defaultValue = true;
+                    var info = System.Reflection.MethodBase.GetCurrentMethod() as System.Reflection.MethodInfo;
+                    var name = info.Name.Substring(4);
+                    return (dynamic)Convert.ChangeType(rootKey.GetValue(name, defaultValue.ToString()), info.ReturnType);
+                }
+
+                set
+                {
+                    var name = System.Reflection.MethodBase.GetCurrentMethod().Name.Substring(4);
+                    rootKey.SetValue(name, value);
+                }
+            }
+        }
+        #endregion support methods
     }
 }
