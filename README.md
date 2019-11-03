@@ -32,6 +32,7 @@ v1.0.2
 - Added Option to Auto Restart Hotspot at user defined interval in tray icon context menu
 - PersistentHotspot will now remember the last state and resume that state after reboot
 	i.e. If Hotspot was turned off, after a reboot, the hotspot will persist the Off state
+- Fixed issue with PersistentHotspot randomly gets in the 'Unknown Error' state and stops working.
 
 v1.0.1
 - Added Exit button in tray icon context menu
