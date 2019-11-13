@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -28,7 +30,18 @@ namespace PersistentHotspot
         [STAThread]
         static void Main(string[] args)
         {
-            if (args.Length == 1 && args[0] == "INSTALLER") { Process.Start(Application.ExecutablePath); return; }
+            if (args.Length == 1 && args[0] == "INSTALLER") {
+                System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+                FileSystemAccessRule fsar = new FileSystemAccessRule("Users", FileSystemRights.FullControl, AccessControlType.Allow);
+                DirectorySecurity ds = null;
+
+                ds = di.GetAccessControl();
+                ds.AddAccessRule(fsar);
+                di.SetAccessControl(ds);
+
+                Process.Start(Application.ExecutablePath); 
+                return; 
+            }
 
             Thread.Sleep(2000);
             Process[] runningProcesses = Process.GetProcessesByName(Process.GetCurrentProcess().ProcessName);
@@ -53,6 +66,7 @@ namespace PersistentHotspot
                 var task = MonitorHotspot();
                 HandleException(task);
 
+                Updater.Run("PersistentHotspot");
                 Application.Run();
             }           
         }
@@ -277,7 +291,7 @@ namespace PersistentHotspot
                 await Task.Yield();
                 await task;
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 trayIcon.Visible = false;
                 Application.Exit();
