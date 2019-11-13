@@ -28,6 +28,9 @@ Strangely, The only way to add a reference to Windows Runtime is to edit your .c
 
 <b>Changelog</b>
 ```
+v1.0.3
+- Added update notifier
+
 v1.0.2
 - Added Option to Auto Restart Hotspot at user defined interval in tray icon context menu
 - PersistentHotspot will now remember the last state and resume that state after reboot
