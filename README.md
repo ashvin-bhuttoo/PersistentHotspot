@@ -6,8 +6,8 @@ If you want to buy me a beer, here's the button for it.. :)<br/>
 
 This project was built using VS2019 Community Edition and the Windows Kits Library was installed as it is a dependency.
 
-The latest installer can be downloaded from here: <a href="https://raw.githubusercontent.com/ashvin-bhuttoo/PersistentHotspot/master/PersistentHotspotSetup/Release/PersistentHotspotSetup.msi"> v1.0.2</a>, uninstall older version before installing latest <br/> 
-Old Versions: <a href="https://raw.githubusercontent.com/ashvin-bhuttoo/PersistentHotspot/master/PersistentHotspotSetup/Archived/PersistentHotspotSetup_v1.0.1.msi"> v1.0.1</a> <a href="https://raw.githubusercontent.com/ashvin-bhuttoo/PersistentHotspot/master/PersistentHotspotSetup/Archived/PersistentHotspotSetup_v1.0.0.msi"> v1.0.0</a>
+The latest installer can be downloaded from here: <a href="https://raw.githubusercontent.com/ashvin-bhuttoo/PersistentHotspot/master/PersistentHotspotSetup/Release/PersistentHotspotSetup.msi"> v1.0.3</a>, uninstall older version before installing latest <br/> 
+Old Versions: <a href="https://raw.githubusercontent.com/ashvin-bhuttoo/PersistentHotspot/master/PersistentHotspotSetup/Archived/PersistentHotspotSetup_v1.0.2.msi"> v1.0.1</a> <a href="https://raw.githubusercontent.com/ashvin-bhuttoo/PersistentHotspot/master/PersistentHotspotSetup/Archived/PersistentHotspotSetup_v1.0.1.msi"> v1.0.1</a> <a href="https://raw.githubusercontent.com/ashvin-bhuttoo/PersistentHotspot/master/PersistentHotspotSetup/Archived/PersistentHotspotSetup_v1.0.0.msi"> v1.0.0</a>
 
 PersistentHotspot uses the WindowsRuntime reference to access the Windows Runtime API that exposes the required interfaces such as NetworkOperatorTetheringManager.
 Strangely, The only way to add a reference to Windows Runtime is to edit your .csproj manually and add the following references, why Microsoft why ?
