@@ -1,8 +1,8 @@
 # PersistentHotspot
 Following a recent update in Windows 10, the Wifi Hotspot feature automatically turns off after a while if there are no connecting clients, there is no way to make it permanently ON anymore using windows configurations. As i wanted my hotspot to be permanently ON, here is PersistentHotspot! 
 
-If you want to buy me a beer, here's the button for it.. :)<br/>
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/ABhuttoo?locale.x=en_US)
+If you want to buy me a beer or just say thanks, here's the buttons for it<br/>
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/ABhuttoo?locale.x=en_US) | [![Thanks](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/ashvin.bhuttoo%40gmail.com)
 
 This project was built using VS2019 Community Edition and the Windows Kits Library was installed as it is a dependency.
 
